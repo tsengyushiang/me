@@ -19,8 +19,8 @@
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
 \usepackage[
-    pdftitle={Yu-Shiang Tseng's CV},
-    pdfauthor={Yu-Shiang Tseng},
+    pdftitle={John Doe's CV},
+    pdfauthor={John Doe},
     pdfcreator={LaTeX with RenderCV},
     colorlinks=true,
     urlcolor=primaryColor
@@ -152,224 +152,169 @@
 
 
 \begin{document}
-\newcommand{\AND}{\unskip
-	\cleaders\copy\ANDbox\hskip\wd\ANDbox
-	\ignorespaces
-}
-\newsavebox\ANDbox
-\sbox\ANDbox{$|$}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
 
-\begin{header}
-	\fontsize{25 pt}{25 pt}\selectfont John Doe
-	
-	\vspace{5 pt}
-	
-	\normalsize
-	\mbox{\hrefWithoutArrow{mailto:tsengyushiang@gmail.com}{tsengyushiang@gmail.com}}%
-	\kern 5.0 pt%
-	\AND%
-	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{tel:+886-983-030-748}{+886-983-030-748}}%
-	\kern 5.0 pt%
-	\AND%
-	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{https://github.com/tsengyushiang}{github.com/tsengyushiang}}%
-\end{header}
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont Yu-Shiang Tseng
 
-\vspace{5 pt - 0.3 cm}
+        \vspace{5 pt}
 
+        \normalsize
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{mailto:tsengyushiang@gmail.com}{tsengyushiang@gmail.com}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{tel:+886-098-303-07-48}{0983 030 748}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://github.com/tsengyushiang}{github.com/tsengyushiang}}%
+    \end{header}
 
-\section{Welcome to RenderCV!}
-
-
-
-        
-\begin{onecolentry}
-	\href{https://rendercv.com}{RenderCV} is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{Markdown syntax support} and \textbf{complete control over the LaTeX code}.
-\end{onecolentry}
-
-\vspace{0.2 cm}
-
-\begin{onecolentry}
-	The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
-\end{onecolentry}
-
-
+    \vspace{5 pt - 0.3 cm}
     
-\section{Quick Guide}
+    \section{Quick Guide}
 
-\begin{onecolentry}
-	\begin{highlightsforbulletentries}
-		
-		
-		\item Each section title is arbitrary and each section contains a list of entries.
-		
-		\item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-		
-		\item Select a section title, pick an entry type, and start writing your section!
-		
-		\item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
-		
-		
-	\end{highlightsforbulletentries}
-\end{onecolentry}
-
-\section{Education}
+    \begin{onecolentry}
+        \begin{highlightsforbulletentries}
 
 
+        \item Building enterprise WLAN management systems with real-time 3D data visualizations.
 
+        \item Experienced in e-signature SaaS platforms, interactive web experiences, and system integration.
         
-\begin{twocolentry}{
-		Sept 2000 – May 2005
-	}
-	\textbf{University of Pennsylvania}, BS in Computer Science\end{twocolentry}
-	
-	\vspace{0.10 cm}
-	\begin{onecolentry}
-		\begin{highlights}
-			\item GPA: 3.9/4.0 (\href{https://example.com}{a link to somewhere})
-			\item \textbf{Coursework:} Computer Architecture, Comparison of Learning Algorithms, Computational Theory
-		\end{highlights}
-	\end{onecolentry}
-	
-	
-	
-	    
-	\section{Experience}
-	
-	
-	
-	        
-	\begin{twocolentry}{
-			June 2005 – Aug 2007
-		}
-		\textbf{Software Engineer}, Apple -- Cupertino, CA\end{twocolentry}
-		
-		\vspace{0.10 cm}
-		\begin{onecolentry}
-			\begin{highlights}
-				\item Reduced time to render user buddy lists by 75\% by implementing a prediction algorithm
-				\item Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts and provide metadata to a system-wide search database
-				\item Redesigned chat file format and implemented backward compatibility for search
-			\end{highlights}
-		\end{onecolentry}
-		
-		
-		\vspace{0.2 cm}
-		
-		\begin{twocolentry}{
-				June 2003 – Aug 2003
-			}
-			\textbf{Software Engineer Intern}, Microsoft -- Redmond, WA\end{twocolentry}
-			
-			\vspace{0.10 cm}
-			\begin{onecolentry}
-				\begin{highlights}
-					\item Designed a UI for the VS open file switcher (Ctrl-Tab) and extended it to tool windows
-					\item Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
-					\item Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
-					\item Created a test case generation tool that creates random XML docs from XML Schema
-					\item Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
-				\end{highlights}
-			\end{onecolentry}
-			
-			
-			
-			    
-			\section{Publications}
-			
-			
-			
-			        
-			\begin{samepage}
-				\begin{twocolentry}{
-						Jan 2004
-					}
-					\textbf{3D Finite Element Analysis of No-Insulation Coils}
-				\end{twocolentry}
-				
-				\vspace{0.10 cm}
-				            
-				\begin{onecolentry}
-					\mbox{Frodo Baggins}, \mbox{\textbf{\textit{Yu-Shiang Tsegn}}, \mbox{Samwise Gamgee}
-						
-						\vspace{0.10 cm}
-						                
-						\href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
-						\end{onecolentry}
-						\end{samepage}
-						
-						
-						    
-						\section{Projects}
-						
-						
-						
-						        
-						\begin{twocolentry}{
-								\href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-							}
-							\textbf{Multi-User Drawing Tool}\end{twocolentry}
-							
-							\vspace{0.10 cm}
-							\begin{onecolentry}
-								\begin{highlights}
-									\item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-									\item Tools Used: C++, MFC
-								\end{highlights}
-							\end{onecolentry}
-							
-							
-							\vspace{0.2 cm}
-							
-							\begin{twocolentry}{
-									\href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-								}
-								\textbf{Synchronized Desktop Calendar}\end{twocolentry}
-								
-								\vspace{0.10 cm}
-								\begin{onecolentry}
-									\begin{highlights}
-										\item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-										\item Tools Used: C\#, .NET, SQL, XML
-									\end{highlights}
-								\end{onecolentry}
-								
-								
-								\vspace{0.2 cm}
-								
-								\begin{twocolentry}{
-										2002
-									}
-									\textbf{Custom Operating System}\end{twocolentry}
-									
-									\vspace{0.10 cm}
-									\begin{onecolentry}
-										\begin{highlights}
-											\item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-											\item Tools Used: C
-										\end{highlights}
-									\end{onecolentry}
-									
-									
-									
-									    
-									\section{Technologies}
-									
-									
-									
-									        
-									\begin{onecolentry}
-										\textbf{Languages:} C++, C, Java, Objective-C, C\#, SQL, JavaScript
-									\end{onecolentry}
-									
-									\vspace{0.2 cm}
-									
-									\begin{onecolentry}
-										\textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
-									\end{onecolentry}
-									
-									
-									    
-									
+        \item Passionate about side projects and emerging technologies; active on GitHub.
+
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \section{Education}
+
+         \begin{twocolentry}{
+            Sep. 2016 – Jul. 2022
+        }
+            \textbf{National Taiwan University of Science and Technology}\end{twocolentry}
+
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Bachelor of Science and Master of Science in Computer Science.
+                \item \textbf{Thesis:} Neural Radiance Fields using Depth Oracle Network for Dynamic Character.
+            \end{highlights}
+        \end{onecolentry}
+    
+    \section{Experience}
+
+        \begin{twocolentry}{
+            Jul. 2024 – Present
+        }
+            \textbf{Senior Software Engineer}, Delta Electronics, Inc.\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed a Wi-Fi AP management platform to control device settings, including SSID, firmware upgrades, and debugging functionalities such as traceroute and ping.
+                \item Implemented a web-based 3D viewer to visualize device data, including client signal strength, client locations, and AP coverage.
+            \end{highlights}
+        \end{onecolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Oct. 2022 – Jun. 2024
+        }
+            \textbf{Frontend Engineer}, Kdan Mobile Software Ltd.\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Dottedsign E-Signature Platform.
+                \item Frontend Engineer for SaaS and on-premise solutions, integrating third-party SDKs.
+                \item Implemented using Next.js React.
+                \item Developed with Scrum methodology, collaborated via Git flow and forking.
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Sep. 2019 – Jan. 2020
+        }
+            \textbf{Software Engineer Intern}, iStaging Corp.\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed a system enabling customers to explore real-world scenes on the web using 3D models and panoramas.
+                \item Implemented using React, WebGL (Three.js), and GLSL for immersive user experiences.
+                \item Mainly contributed in camera animation and panorama blending algorithms for seamless transitions.
+            \end{highlights}
+        \end{onecolentry}
+
+    \section{Projects}
+        
+
+        \href{https://github.com/tsengyushiang/coverage-visualizer}{\textbf{3D Coverage Visualizer}}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Tools Used: React, three.js, storybook, jsdoc
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \href{https://github.com/tsengyushiang/triangle-localization-simulator}{\textbf{Triangle localization Simulator}}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Tools Used: React, nodejs, prometheus, grafana, nginx, docker-compose
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \href{https://github.com/tsengyushiang/pano-to-mesh}{\textbf{Panorama layout editor for creating 3D mesh from scratch.}}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Tools Used: Flask, Celery
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \href{https://github.com/tsengyushiang/react-rnd-group}{\textbf{Hierarchical Transformations for react-rnd.}}
+
+        \vspace{0.2 cm}
+        \href{https://spotify-kappa-three.vercel.app/}{\textbf{RWD webpage with spotify music api.}}
+        
+
+    \section{Technologies}
+
+        \begin{onecolentry}
+            \textbf{Languages:} JavaScript, TypeScript, CSS, HTML, GLSL, C++, Python
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Frameworks/Libraries:} Next.js, React, Redux, Jest, i18n, styled-components, Storybook, MSW, three.js
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Tools:} Git, CI/CD (GitHub Workflow, GitLab Pipeline), Docker, SonarQube, nginx
+        \end{onecolentry}
+
 \end{document}
