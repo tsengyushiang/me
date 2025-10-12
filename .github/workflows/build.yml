@@ -5,24 +5,25 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      # Edit here with the names of your latex file and directory (can use ".")
-      DIR: .
-      FILE: cv
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
       - name: cv
         uses: dante-ev/latex-action@latest
         with:
-          root_file: ${{ env.FILE }}
-          working_directory: ${{ env.DIR }}
+          root_file: cv.tex
+          working_directory: .
+      - name: Build GLSL CV
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: cv-glsl.tex
+          working_directory: .
       - name: move
-        run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
-      - name: Upload pdf as artifact
+        run: mkdir -p github_artifacts && mv ./cv.pdf ./github_artifacts/ && mv ./cv-glsl.pdf ./github_artifacts/
+      - name: Upload pdfs as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.FILE }}.pdf
+          name: cvs
           path: ./github_artifacts
   deploy:
     needs: [build]
